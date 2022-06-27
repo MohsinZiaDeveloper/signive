@@ -5,7 +5,7 @@ import circleplus from "../assets/After_Send_a_form/plusCircle.png";
 import massageIcon from "../assets/After_Send_a_form/2.svg";
 import phoneIcon from "../assets/After_Send_a_form/tel.svg";
 import svgLogo from "../assets/After_Send_a_form/logoSvgicon.svg";
-import footerBgimage from "../assets/After_Send_a_form/footerbgimage.png";
+import dotsCircle from "../assets/After_Send_a_form/dotsCircle.png";
 import buttonIcon from "../assets/After_Send_a_form/send.png";
 
 const AfterSendForm = () => {
@@ -56,7 +56,17 @@ const AfterSendForm = () => {
         </div>
 
         <div className="w-full p-0 lg:p-8">
-          <div className="flex-col lg:flex lg:flex-row pt-10 pb-10 mt-20 rounded-2xl  bg-cover lg:bg-contain  bg-no-repeat  bg-[url('assets/After_Send_a_form/footerbgimage.png')]">
+          <div className="flex-col lg:flex lg:flex-row pt-10 pb-10 mt-20 border-4 border-lightfooterColor relative  bg-footerColor rounded-2xl  ">
+            <img
+              src={dotsCircle}
+              className="h-[5rem] w-[5rem] absolute bottom-[-2rem] left-[-2rem] overflow-hidden"
+              alt=""
+            />
+            <img
+              src={dotsCircle}
+              className="h-[5rem] w-[5rem] absolute top-[-2rem] right-[-2rem] overflow-hidden"
+              alt=""
+            />
             <div className="w-full lg:w-[60%] pl-10 lg:pl-20 flex-col lg:flex lg:flex-row">
               <div className="w-full lg:w-2/6  flex items-start flex-col">
                 <img src={svgLogo} className="h-10 w-30 text-white " alt="" />
