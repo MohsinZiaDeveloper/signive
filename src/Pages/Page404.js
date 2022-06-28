@@ -9,6 +9,7 @@ const Page404 = () => {
         src={plus}
         alt=""
         className="h-30 w-20 absolute hidden lg:block right-10 top-50"
+        
       />
       <div className="w-full h-full flex flex-col">
         <div className="flex justify-center mt-20 w-full">
