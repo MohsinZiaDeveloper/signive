@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "../App";
 import AfterSendForm from "../Pages/AfterSendForm";
+import Funkcjonalnosci from "../Pages/Funkcjonalnosci";
 import Page404 from "../Pages/Page404";
 import PolitykaPrywatnosci from "../Pages/PolitykaPrywatnosci";
 import Strona from "../Pages/Strona";
@@ -15,6 +16,7 @@ const MainRoutes = () => {
           <Route path="page404" element={<Page404 />} />
           <Route path="polityka" element={<PolitykaPrywatnosci />} />
           <Route path="strona" element={<Strona />} />
+          <Route path="Funkcjonalnosci" element={<Funkcjonalnosci />} />
         </Route>
       </Routes>
     </BrowserRouter>
