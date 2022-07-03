@@ -61,8 +61,17 @@ const Strona = () => {
             <div className="h-[22rem] lg:h-[18rem]  mt-5  bg-contain bg-no-repeat rounded-md border-2 border-lightfooterColor  bg-[url('assets/Strona/centra.png')]">
               <div className="bg-footerColor rounded-md h-full w-full opacity-90 flex flex-col items-center  ">
                 <div className="h-20 w-20 border-2 mt-10 border-white p-1 opacity-70 rounded-full">
-                  <div className="h-full w-full flex justify-center items-center rounded-full bg-lightfooterColor">
-                    <img src={downloadIcon} alt="" className="h-8 w-8 " />
+                  <div
+                    className="h-full relative w-full z-20 cursor-pointer flex justify-center items-center rounded-full bg-lightfooterColor"
+                    for="file_input"
+                  >
+                    <img src={downloadIcon} alt="" className="h-8 w-8  " />
+
+                    <input
+                      className="opacity-0 absolute h-full  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                      id="file_input"
+                      type="file"
+                    ></input>
                   </div>
                 </div>
                 <h3 className="text-white text-md font-normal mt-2">
@@ -78,8 +87,16 @@ const Strona = () => {
                     consectetur adipiscing
                   </p>
                 </div>
-                <button className="text-xs mt-5 font-medium px-10 py-3 rounded-[0.3rem] text-footerColor bg-white border-2 border-footerColor">
+                <button
+                  className="text-xs relative mt-5 font-medium px-10 py-3 rounded-[0.3rem] text-footerColor bg-white border-2 border-footerColor"
+                  for="file_input1"
+                >
                   Strona główna
+                  <input
+                    className="opacity-0 left-0 top-0 absolute h-full  w-full "
+                    id="file_input1"
+                    type="file"
+                  ></input>
                 </button>
               </div>
             </div>
