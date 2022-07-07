@@ -34,7 +34,7 @@ const Weryfikacja = () => {
         <div className="flex flex-col relative h-auto  bg-cover bg-no-repeat  bg-[url('assets/Weryfikacja/WeryfikacjaBackground.png')] ">
           <Header />
 
-          <div className="flex flex-col px-4 mt-0 lg:mt-20 lg:px-32 ">
+          <div className="flex flex-col px-4 mt-0 py-20 lg:py-[15rem] lg:px-32 ">
             <div className="flex flex-col lg:flex-row">
               <div className="flex  w-full lg:w-1/2  ">
                 <div className="flex flex-col">
@@ -64,7 +64,7 @@ const Weryfikacja = () => {
             </div>
 
             {/* first section ends  */}
-            <div className="w-full flex px-4 mt-24 lg:px-[10rem]">
+            <div className="w-full flex px-4 lg:mt-[13rem] lg:px-[10rem]">
               <div className="w-full ">
                 <div className=" flex  flex-col items-center">
                   <h3 className="text-3xl font-bold">Werfikacja</h3>

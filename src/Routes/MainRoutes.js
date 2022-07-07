@@ -15,7 +15,7 @@ const MainRoutes = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route index element={<AfterSendForm />} />
+          <Route index element={<Strona />} />
           <Route path="page404" element={<Page404 />} />
           <Route path="polityka" element={<PolitykaPrywatnosci />} />
           <Route path="strona" element={<Strona />} />
@@ -23,6 +23,7 @@ const MainRoutes = () => {
           <Route path="kontakt" element={<Kontakt />} />
           <Route path="Weryfikacja" element={<Weryfikacja />} />
           <Route path="Certyfikaty" element={<Certyfikaty />} />
+          <Route path="AfterSendForm" element={<AfterSendForm />} />
         </Route>
       </Routes>
     </BrowserRouter>

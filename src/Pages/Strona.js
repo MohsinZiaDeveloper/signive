@@ -23,7 +23,7 @@ const Strona = () => {
         />
         <Header />
         {/* First Section  */}
-        <div className="w-full flex px-4 lg:px-[10rem] mt-10 ">
+        <div className="w-full flex flex-col lg:flex-row px-4 lg:px-[10rem] pt-32 pb-20 ">
           <div className="flex w-full lg:w-1/2 justify-start  items-center ">
             <div className="flex flex-col  items-center lg:items-start p-0 lg:pr-20">
               <h3 className=" text-lg lg:text-3xl font-bold opacity-80">
@@ -39,8 +39,8 @@ const Strona = () => {
               </button>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 justify-center  hidden lg:flex">
-            <img src={websiteImage} alt="" className="h-[26rem] w-[full]" />
+          <div className="w-full lg:w-1/2 justify-center flex">
+            <img src={websiteImage} alt="" className="h-[15rem] mt-10 lg:mt-0 lg:h-[26rem] w-[full]" />
           </div>
         </div>
 
@@ -157,7 +157,7 @@ const Strona = () => {
           </div>
         </div>
         {/* fourth Section */}
-        <div className="flex px-2 lg:px-[10rem] mt-24 flex-col w-full">
+        <div className="flex px-2 lg:px-[10rem] bg-white lg:bg-transparent  mt-24 flex-col w-full">
           <div className="flex flex-col w-full items-center">
             <h3 className="text-3xl font-bold ">Wspierane Centra</h3>
             <p className="text-xs font-light text-footerColor mt-5 text-center px-20">

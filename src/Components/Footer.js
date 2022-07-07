@@ -64,7 +64,7 @@ const Footer = () => {
                 Wyślij nam swój adres email. Skontaktujemy się z Tobą
                 najszybciej jak to możliwe.
               </p>
-              <button className="mt-5 w-[18rem] lg:w-auto text-xs font-light text-logoColor pl-8 relative pr-28 py-4 bg-white rounded-full">
+              <button className="mt-5 w-[18rem] lg:w-auto text-xs font-light text-white pl-8 relative pr-28 py-4 bg-white rounded-full">
                 wpisz adres email
                 <div className="h-10 w-10 absolute flex items-center justify-center bg-logoColor top-1 right-1 rounded-full">
                   <img

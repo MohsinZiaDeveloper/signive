@@ -19,7 +19,7 @@ const PolitykaPrywatnosci = () => {
 
       <Header />
 
-      <div className="w-full flex justify-center">
+      <div className="w-full flex mt-32 justify-center">
         <h3 className="text-3xl font-bold opacity-80">Polityka prywatności</h3>
       </div>
       <div className="w-full flex flex-col px-4 lg:px-[16rem]">

@@ -24,7 +24,7 @@ const Certyfikaty = () => {
         <div className="flex flex-col relative h-auto  bg-cover bg-no-repeat  bg-[url('assets/Funkcjonalnosci/bgimageFunkcjonalnosci.png')] ">
           <Header />
 
-          <div className="flex flex-col px-4 lg:px-44 ">
+          <div className="flex flex-col mt-10 px-4 lg:px-44 ">
             <div className="flex flex-col mt-5 lg:mt-20 items-center ">
               <h3 className="text-3xl font-light ">Wspierane centra</h3>
               <p className="px-4 lg:px-20 text-[0.6rem] font-light mt-3 text-center text-footerColor">
@@ -36,7 +36,7 @@ const Certyfikaty = () => {
                 tempor. Vestibulum molestie urna at turpis porta, ac sagittis
                 metus tincidunt. Morbi mollis a turpis sit amet pretium.
               </p>
-              <div className="flex justify-center mt-2">
+              <div className="flex justify-center mt-8">
                 <img src={signiveImage} alt="" className="h-[9rem] w-[25rem]" />
               </div>
             </div>
@@ -67,7 +67,7 @@ const Certyfikaty = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-center gap-3 ">
+                <div className="flex justify-start lg:justify-center gap-3 ">
                   <div>
                     <img src={belgiaFlag} className="h-full w-14" alt="" />
                   </div>
@@ -80,7 +80,7 @@ const Certyfikaty = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-end gap-3 ">
+                <div className="flex justify-start lg:justify-end gap-3 ">
                   <div>
                     <img src={bulgeriaFloag} className="h-full w-14" alt="" />
                   </div>
@@ -108,7 +108,7 @@ const Certyfikaty = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-center gap-3 ">
+                <div className="flex justify-start lg:justify-center gap-3 ">
                   <div>
                     <img src={islandiaFLag} className="h-full w-14" alt="" />
                   </div>
@@ -121,7 +121,7 @@ const Certyfikaty = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-end gap-3 ">
+                <div className="flex justify-start lg:justify-end gap-3 ">
                   <div>
                     <img src={czevhyFlag} className="h-full w-14" alt="" />
                   </div>
@@ -135,7 +135,7 @@ const Certyfikaty = () => {
                   </div>
                 </div>
                 {/* sec flag row ends */}
-                <div className="flex justify-start gap-3 ">
+                <div className="flex justify-start lg:justify-start gap-3 ">
                   <div>
                     <img src={daniaFlag} className="h-full w-14" alt="" />
                   </div>
@@ -148,7 +148,7 @@ const Certyfikaty = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-center gap-3 ">
+                <div className="flex justify-start lg:justify-center gap-3 ">
                   <div>
                     <img src={estoniaFlag} className="h-full w-14" alt="" />
                   </div>
@@ -161,7 +161,7 @@ const Certyfikaty = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-end gap-3 ">
+                <div className="flex justify-start lg:justify-end gap-3 ">
                   <div>
                     <img src={finlandFlag} className="h-full w-14" alt="" />
                   </div>
@@ -190,7 +190,7 @@ const Certyfikaty = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-center gap-3 ">
+                <div className="flex justify-start lg:justify-center gap-3 ">
                   <div>
                     <img src={niemcyFlagg} className="h-full w-14" alt="" />
                   </div>
@@ -203,7 +203,7 @@ const Certyfikaty = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-end gap-3 ">
+                <div className="flex justify-start lg:justify-end gap-3 ">
                   <div>
                     <img src={grecFlag} className="h-full w-14" alt="" />
                   </div>

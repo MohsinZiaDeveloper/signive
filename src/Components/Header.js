@@ -53,7 +53,7 @@ const navLinks = [
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-
+const [scroll,setScroll]= useState();
   const [screenDimension, setScreenDimension] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -74,8 +74,20 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+ 
+
+const changeBackground =()=>{
+  if(window.scrollY >= 80){
+    setScroll(true);
+  }
+  else{
+    setScroll(false);
+  }
+
+}
+  window.addEventListener('scroll',changeBackground)
   return (
-    <div className=" h-[5rem] mt-2">
+    <div className={`h-[5rem] w-full  fixed z-[90]  ${scroll === true ? "bg-white ":""}`} >
       <div className=" w-full h-[4.5rem] px-2 lg:px-20  bg-transparent z-[50] ">
         <div className="md:flex items-center justify-between relative  md:px-10 h-full px-7">
           <div className="font-bold text-2xl cursor-pointer  flex  items-center ">
@@ -90,16 +102,16 @@ const Header = () => {
           </div>
           <div
             onClick={() => setOpen(!open)}
-            className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+            className="text-3xl absolute right-8 top-6 cursor-pointer lg:hidden"
           >
             <img src={menu} className="h-8 w-8 mt-[-1rem]" alt="" />
           </div>
 
           <div
-            className={`md:flex md:items-center h-screen  z-10 rounded-l-sm lg:rounded-none lg:h-auto  bg-footerColor  lg:bg-transparent bg-opacity-90   md:pb-0 pb-12 absolute md:static gap-10 md:z-auto  w-full  md:w-auto md:pl-0 pl-9 transition-all duration-700 ease-in ${
+            className={`md:flex md:items-center h-[20rem]  rounded-sm bg-white lg:bg-transparent shadow-2xl lg:shadow-none  z-10 lg:rounded-none lg:h-auto     md:pb-0 pb-12 absolute md:static gap-10 md:z-auto  w-full  md:w-auto md:pl-0 pl-9 transition-all duration-700 ease-in ${
               open
-                ? "right-[-25vw] top-[4.5rem] lg:top-0 "
-                : "right-[-175vw] top-[4.5rem] lg:top-0"
+                ? "right-0 top-[-23rem] lg:top-0 "
+                : "right-0 top-[3.5rem] lg:top-0"
             }`}
           >
             <ul className="md:flex md:items-center lg:gap-5 text-md lg:text-xs font-light space-y-6 lg:space-y-0 ">
@@ -111,7 +123,7 @@ const Header = () => {
 
                       <a
                         smooth
-                        className="w-full py-2 px-4 lg:m-0 text-white lg:text-black font-light duration-300 ease-in-out  z-10"
+                        className="w-full py-2 px-4 lg:m-0 text-black font-light duration-300 ease-in-out  z-10"
                         to={value.To}
                         onClick={() => setOpen(false)}
                       >
