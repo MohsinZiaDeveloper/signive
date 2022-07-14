@@ -26,7 +26,9 @@
 
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
-import menu from "../assets/Weryfikacja/menu.png";
+// import menu from "../assets/Weryfikacja/menu.png";
+import closeMenu from "../assets/menuClose.png"
+import menuopen from "../assets/menuopen.png"
 
 const navLinks = [
   {
@@ -104,7 +106,11 @@ const changeBackground =()=>{
             onClick={() => setOpen(!open)}
             className="text-3xl absolute right-8 top-6 cursor-pointer lg:hidden"
           >
-            <img src={menu} className="h-8 w-8 mt-[-1rem]" alt="" />
+           {
+            open ? ( <img src={menuopen} className="h-4 w-4 mt-[-0.5rem] mr-4" alt="" />):(
+              <img src={closeMenu} className="h-4 w-4 mt-[-0.5rem] mr-4" alt="" />
+            )
+           }
           </div>
 
           <div
