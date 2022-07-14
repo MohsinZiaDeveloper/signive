@@ -107,7 +107,7 @@ const changeBackground =()=>{
             className="text-3xl absolute right-8 top-6 cursor-pointer lg:hidden"
           >
            {
-            open ? ( <img src={menuopen} className="h-4 w-4 mt-[-0.5rem] mr-4" alt="" />):(
+            open ? (<img src={menuopen} className="h-4 w-4 mt-[-0.5rem] mr-4" alt="" />):(
               <img src={closeMenu} className="h-4 w-4 mt-[-0.5rem] mr-4" alt="" />
             )
            }
