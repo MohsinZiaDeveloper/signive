@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import websiteImage from "../assets/Strona/website.png";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
@@ -11,8 +11,10 @@ import img4 from "../assets/Strona/4.svg";
 import map from "../assets/Strona/map.png";
 import locationIcon from "../assets/Strona/place.svg";
 import plus from "../assets/page404/plusImage.png";
+import file from "../assets/file.png";
 
 const Strona = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
   return (
     <div className="flex flex-col relative h-auto items-center   bg-cover bg-no-repeat  bg-[url('assets/Strona/StronaBgimage.png')] ">
       <div className="container">
@@ -40,13 +42,17 @@ const Strona = () => {
             </div>
           </div>
           <div className="w-full lg:w-1/2 justify-center flex">
-            <img src={websiteImage} alt="" className="h-[15rem] mt-10 lg:mt-0 lg:h-[26rem] w-[full]" />
+            <img
+              src={websiteImage}
+              alt=""
+              className="h-[15rem] mt-10 lg:mt-0 lg:h-[26rem] w-[full]"
+            />
           </div>
         </div>
 
         {/* Second Section  */}
         <div className="w-full flex px-4 mt-24 lg:px-[10rem]">
-          <div className="w-1/3 hidden lg:flex">
+          <div className="w-1/3 hidden lg:flex z-[50]">
             <img src={mobile} alt="" className="h-auto w-full" />
           </div>
           <div className="w-full ">
@@ -58,21 +64,72 @@ const Strona = () => {
                 adipiscing elit
               </p>
             </div>
-            <div className="h-[22rem] lg:h-[18rem]  mt-5  bg-contain bg-no-repeat rounded-md border-2 border-lightfooterColor  bg-[url('assets/Strona/centra.png')]">
-              <div className="bg-footerColor rounded-md h-full w-full opacity-90 flex flex-col items-center  ">
-                <div className="h-20 w-20 border-2 mt-10 border-white p-1 opacity-70 rounded-full">
+            <div className="h-[22rem] lg:h-[18rem]  mt-5  ml-[-1rem] bg-right  bg-contain bg-no-repeat rounded-md border-2 border-lightfooterColor  bg-[url('assets/Strona/centra.png')]">
+              <div className="bg-footerColor rounded-md h-full w-full bg-opacity-90 flex flex-col items-center  ">
+                <div className="h-24 w-24 border-2 mt-10 border-white p-1  rounded-full">
                   <div
                     className="h-full relative w-full z-20 cursor-pointer flex justify-center items-center rounded-full bg-lightfooterColor"
                     for="file_input"
                   >
-                    <img src={downloadIcon} alt="" className="h-8 w-8  " />
+                    {selectedImage ? (
+                      <img
+                        alt="not fount"
+                        className="h-full w-full rounded-full object-cover"
+                        src={URL.createObjectURL(selectedImage)}
+                      />
+                    ) : (
+                      <img src={file} alt="" className="h-10 w-8" />
+                    )}
 
                     <input
                       className="opacity-0 absolute h-full  w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                       id="file_input"
                       type="file"
+                      onChange={(event) => {
+                        console.log(event.target.files[0]);
+                        setSelectedImage(event.target.files[0]);
+                      }}
                     ></input>
                   </div>
+                  {/* 
+                  <div>
+                    {selectedImage ? (
+                      <div>
+                        <img
+                          alt="not fount"
+                          width={"250px"}
+                          src={URL.createObjectURL(selectedImage)}
+                        />
+                        <br />
+                        <button onClick={() => setSelectedImage(null)}>
+                          Remove
+                        </button>
+                      </div>
+                    ) : (
+                      <div
+                        className="h-full relative w-full z-20 cursor-pointer flex justify-center items-center rounded-full bg-lightfooterColor"
+                        for="file_input"
+                      >
+                        <img
+                          src={downloadIcon}
+                          for="file_input"
+                          alt=""
+                          className="h-8 w-8 "
+                        />
+                      </div>
+                    )}
+
+                    <input
+                      type="file"
+                      id="file_input"
+                      className="opacity-0"
+                      name="myImage"
+                      onChange={(event) => {
+                        console.log(event.target.files[0]);
+                        setSelectedImage(event.target.files[0]);
+                      }}
+                    />
+                  </div> */}
                 </div>
                 <h3 className="text-white text-md font-normal mt-2">
                   Podstawowe Funkcionalosci
