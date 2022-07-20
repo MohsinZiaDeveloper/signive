@@ -68,23 +68,31 @@ const Kontakt = () => {
             <div className="flex flex-col items-center  text-white">
               <div className="flex flex-col  items-center">
                 <h3 className="text-sm font-light">Napisz do nas</h3>
-                <label className="mt-3 font-light text-[0.6rem] ">
+                {/* <label className="mt-3 font-light text-[0.6rem] ">
                   Imię i nazwisko
-                </label>
+                </label> */}
+                <input
+                  className="mt-3 font-light text-xs placeholder:text-white text-white w-full h-full bg-transparent outline-none border-none text-center"
+                  placeholder="Imię i nazwisko"
+                />
                 <div className=" border-t-[0.02rem] mt-1 w-[20rem]"></div>
-                <label className="mt-3 font-light text-[0.6rem] ">
-                  Adres email
-                </label>
+
+                <input
+                  className="mt-3 font-light text-xs placeholder:text-white text-white w-full h-full bg-transparent outline-none border-none text-center"
+                  placeholder="Adres email"
+                />
                 <div className=" border-t-[0.02rem] mt-1 w-[20rem]"></div>
-                <label className="mt-3 font-light text-[0.6rem] ">
-                  Treść wiadomości
-                </label>
+
+                <input
+                  className="mt-3 font-light text-xs placeholder:text-white text-white w-full h-full bg-transparent outline-none border-none text-center"
+                  placeholder="  Treść wiadomości"
+                />
               </div>
               <div className="mt-10 flex w-full lg:w-1/2 flex-col items-center text-white ">
                 <div className=" border-t-[0.02rem] mt-1 w-[20rem]"></div>
                 <div className="flex gap-3 mt-3 px-5 items-center">
                   <input type="checkbox" />
-                  <p className="font-light text-[0.4rem]">
+                  <p className="font-light text-[0.6rem]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida.
@@ -92,7 +100,7 @@ const Kontakt = () => {
                 </div>
                 <div className="flex gap-3 px-5 mt-5 items-center">
                   <input type="checkbox" />
-                  <p className="font-light text-[0.4rem]">
+                  <p className="font-light text-[0.6rem]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus

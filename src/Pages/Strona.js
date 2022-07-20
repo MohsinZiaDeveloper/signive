@@ -32,11 +32,11 @@ const Strona = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor
               </h3>
-              <p className="text-xs font-light opacity-60 mt-4">
+              <p className="text-sm font-light opacity-60 mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor
               </p>
-              <button className="text-xs mt-5 font-medium px-10 py-3 rounded-[0.3rem] text-white bg-footerColor border-2 border-lightfooterColor">
+              <button className="text-sm mt-5 font-medium px-10 py-3 rounded-[0.3rem] text-white bg-footerColor border-2 border-lightfooterColor">
                 WERYFIKUj PLIKI
               </button>
             </div>
@@ -58,13 +58,13 @@ const Strona = () => {
           <div className="w-full ">
             <div className=" flex  flex-col items-center">
               <h3 className="text-3xl font-bold">Werfikacja</h3>
-              <p className="text-center text-footerColor text-[0.7rem] mt-3 px-28">
+              <p className="text-center text-footerColor leading-5 text-xs mt-3 px-28">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit
               </p>
             </div>
-            <div className="h-[22rem] lg:h-[18rem]  mt-5  ml-[-1rem] bg-right  bg-contain bg-no-repeat rounded-md border-2 border-lightfooterColor  bg-[url('assets/Strona/centra.png')]">
+            <div className="h-[24rem] lg:h-[20rem]  mt-5  ml-[-1rem] bg-right  bg-contain bg-no-repeat rounded-md border-2 border-lightfooterColor  bg-[url('assets/Strona/centra.png')]">
               <div className="bg-footerColor rounded-md h-full w-full bg-opacity-90 flex flex-col items-center  ">
                 <div className="h-24 w-24 border-2 mt-10 border-white p-1  rounded-full">
                   <div
@@ -135,8 +135,12 @@ const Strona = () => {
                   Podstawowe Funkcionalosci
                 </h3>
                 <div className="flex px-10 mt-3">
-                  <div className="h-3 w-6 mt-1 bg-white rounded-sm"></div>
-                  <p className="text-[0.6rem] text-white   ml-2">
+                  {/* <div className="h-3 w-6 mt-1 bg-white rounded-sm"></div> */}
+                  <input
+                    className="h-5 w-7   border-none outline-none focus:outline-none"
+                    type="checkbox"
+                  />
+                  <p className="text-xs text-white leading-5   ml-2">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit Lorem ipsum dolor sit amet, consectetur
@@ -145,7 +149,7 @@ const Strona = () => {
                   </p>
                 </div>
                 <button
-                  className="text-xs relative mt-5 font-medium px-10 py-3 rounded-[0.3rem] text-footerColor bg-white border-2 border-footerColor"
+                  className="text-sm relative mt-5 font-medium px-10 py-3 rounded-[0.3rem] text-footerColor bg-white border-2 border-footerColor"
                   for="file_input1"
                 >
                   Strona główna
@@ -163,7 +167,7 @@ const Strona = () => {
         <div className="flex px-2 lg:px-[10rem] mt-24 flex-col w-full ">
           <div className="flex flex-col w-full items-center">
             <h3 className="text-3xl font-bold ">Podstawowe Funkcionalosci</h3>
-            <p className="text-xs font-light text-footerColor mt-5 text-center px-20">
+            <p className="text-sm font-light text-footerColor leading-5 mt-5 text-center px-20">
               do eiusmod tempor Lorem ipsum dolor sit amet, consectetur
               adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing
               elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur
@@ -173,40 +177,40 @@ const Strona = () => {
           <div className="w-full mt-10 grid grid-cols-1 lg:grid-cols-4 gap-16 lg:gap-4 px-20">
             <div className="w-[full] flex shadow-xl py-5 px-5 flex-col items-center ">
               <img src={img1} className="h-16 w-16" alt="" />
-              <h3 className="text-xs mt-3 px-5 text-logoColor font-bold text-center ">
+              <h3 className="text-sm mt-3 px-5 text-logoColor font-bold text-center ">
                 Lorem ipsum dolor
               </h3>
-              <p className="text-xs font-light text-center mt-4 opacity-60">
+              <p className="text-sm font-light text-center mt-4 opacity-60">
                 elit Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod Lorem ipsum dolor sit amet
               </p>
             </div>
             <div className="w-[full] flex shadow-xl py-5 px-5 flex-col items-center ">
               <img src={img2} className="h-16 w-16" alt="" />
-              <h3 className="text-xs mt-3 px-5 text-logoColor font-bold text-center ">
+              <h3 className="text-sm mt-3 px-5 text-logoColor font-bold text-center ">
                 Lorem ipsum dolor
               </h3>
-              <p className="text-xs font-light text-center mt-4 opacity-60">
+              <p className="text-sm font-light text-center mt-4 opacity-60">
                 elit Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod Lorem ipsum dolor sit amet
               </p>
             </div>
             <div className="w-[full] flex shadow-xl py-5 px-5 flex-col items-center ">
               <img src={img3} className="h-12 w-12 mt-3 " alt="" />
-              <h3 className="text-xs mt-3 px-5 text-logoColor font-bold text-center ">
+              <h3 className="text-sm mt-3 px-5 text-logoColor font-bold text-center ">
                 Lorem ipsum dolor
               </h3>
-              <p className="text-xs font-light text-center mt-4 opacity-60">
+              <p className="text-sm font-light text-center mt-4 opacity-60">
                 elit Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod Lorem ipsum dolor sit amet
               </p>
             </div>
             <div className="w-[full] flex shadow-xl py-5 px-5 flex-col items-center ">
               <img src={img4} className="h-16 w-16" alt="" />
-              <h3 className="text-xs mt-3 px-5 text-logoColor font-bold text-center ">
+              <h3 className="text-sm mt-3 px-5 text-logoColor font-bold text-center ">
                 Lorem ipsum dolor
               </h3>
-              <p className="text-xs font-light text-center mt-4 opacity-60">
+              <p className="text-sm font-light text-center mt-4 opacity-60">
                 elit Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod Lorem ipsum dolor sit amet
               </p>
@@ -217,7 +221,7 @@ const Strona = () => {
         <div className="flex px-2 lg:px-[10rem] bg-white lg:bg-transparent  mt-24 flex-col w-full">
           <div className="flex flex-col w-full items-center">
             <h3 className="text-3xl font-bold ">Wspierane Centra</h3>
-            <p className="text-xs font-light text-footerColor mt-5 text-center px-20">
+            <p className="text-sm font-light text-footerColor mt-5 leading-5 text-center px-20">
               do eiusmod tempor Lorem ipsum dolor sit amet, consectetur
               adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing
               elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur

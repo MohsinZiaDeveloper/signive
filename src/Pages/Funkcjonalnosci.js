@@ -28,6 +28,7 @@ const dropDowndata = [
     title: "Donec nec accumsan libero?",
     open: true,
   },
+
   {
     title: "Nullam euismod consectetur enim sed suscipit?",
     open: true,
@@ -51,7 +52,7 @@ const Funkcjonalnosci = () => {
           <div className="flex flex-col px-4 lg:px-44 ">
             <div className="flex flex-col mt-5 lg:mt-20 items-center ">
               <h3 className="text-3xl font-light ">Funkcjonalnosci</h3>
-              <p className="px-4 lg:px-20 text-[0.6rem] font-light mt-3 text-center text-footerColor">
+              <p className="px-4 lg:px-20  leading-5 text-xs font-light mt-3 text-center text-footerColor">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Praesent pharetra suscipit rhoncus. Quisque sed quam mauris.
                 Aliquam auctor nibh vitae mauris molestie rhoncus a eu libero.
@@ -73,13 +74,13 @@ const Funkcjonalnosci = () => {
                   className="h-[18rem]  w-[18rem] object-contain"
                 />
               </div>
-              <div className="w-full mt-10 lg:mt-0 lg:w-1/2 flex  items-center relative flex-row  ">
+              <div className="w-full mt-10 lg:mt-0 lg:w-1/2 flex    items-center relative flex-row  ">
                 <h1 className="absolute left-0 top-0 text-[4rem] font-bolder text-footerColor opacity-20 ">
                   1.
                 </h1>
                 <div className="flex mt-5 flex-col pl-10">
                   <h3 className="text-2xl font-light ">Prześlij plik</h3>
-                  <p className="mt-5 font-light text-xs text-footerColor">
+                  <p className="mt-5 font-light leading-5   text-xs text-footerColor">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Praesent pharetra suscipit rhoncus. Quisque sed quam mauris.
                     Aliquam auctor nibh vitae mauris molestie rhoncus a eu
@@ -98,7 +99,7 @@ const Funkcjonalnosci = () => {
                 </h1>
                 <div className="flex mt-5 flex-col pl-10">
                   <h3 className="text-2xl font-light ">Werfikacja</h3>
-                  <p className="mt-5 font-light text-xs text-footerColor">
+                  <p className="mt-5 leading-5 font-light text-xs text-footerColor">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Praesent pharetra suscipit rhoncus. Quisque sed quam mauris.
                     Aliquam auctor nibh vitae mauris molestie rhoncus a eu
@@ -131,7 +132,7 @@ const Funkcjonalnosci = () => {
                 </h1>
                 <div className="flex mt-5 flex-col pl-10">
                   <h3 className="text-2xl font-light ">Prześlij plik</h3>
-                  <p className="mt-5 font-light text-xs text-footerColor">
+                  <p className="mt-5 font-light leading-5 text-xs text-footerColor">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Praesent pharetra suscipit rhoncus. Quisque sed quam mauris.
                     Aliquam auctor nibh vitae mauris molestie rhoncus a eu
@@ -191,7 +192,7 @@ const Funkcjonalnosci = () => {
             <div className="flex px-4 lg:px-20 mt-10  ">
               <div className="flex flex-col rounded-lg py-16 p-10 shadow-2xl items-center">
                 <h3 className="text-2xl font-light ">Szybko i bezpiecznie</h3>
-                <p className="text-[0.7rem] mt-10 px-2 lg:px-20 text-center font-light text-footerColor">
+                <p className="text-xs mt-10 px-2 leading-5 lg:px-20 text-center font-light text-footerColor">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Praesent pharetra suscipit rhoncus. Quisque sed quam mauris.
                   Aliquam auctor nibh vitae mauris molestie rhoncus a eu libero.
@@ -291,7 +292,7 @@ const Funkcjonalnosci = () => {
                 <h3 className="text-2xl font-light ">
                   Najczęściej zadawane pytania
                 </h3>
-                <p className="text-xs mt-5 font-light text-center  text-footerColor px-5 lg:px-20">
+                <p className="text-xs mt-5 leading-5  font-light text-center  text-footerColor px-5 lg:px-20">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Praesent pharetra suscipit rhoncus. Quisque sed quam mauris.
                   Aliquam auctor nibh vitae mauris molestie rhoncus a eu libero.
@@ -304,7 +305,7 @@ const Funkcjonalnosci = () => {
               </div>
               <div className="flex flex-col my-10 px-4 lg:px-20">
                 {/* drop downs  */}
-                <div className="flex flex-col ">
+                <div className="flex flex-col z-50 ">
                   {dropDowndata.map((data, index) => {
                     return (
                       <div
@@ -329,7 +330,7 @@ const Funkcjonalnosci = () => {
                         </div>
                         {click === index && (
                           <div className="mt-3">
-                            <p className="px-8 py-4 text-[0.6rem] lg:text-xs font-light opacity-90">
+                            <p className="px-8 py-4 leading-5 text-[0.6rem] lg:text-xs font-light opacity-90">
                               Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit. Proin condimentum lacinia nisl, ac
                               scelerisque libero porta sit amet. Suspendisse

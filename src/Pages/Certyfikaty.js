@@ -27,7 +27,7 @@ const Certyfikaty = () => {
           <div className="flex flex-col mt-10 px-4 lg:px-44 ">
             <div className="flex flex-col mt-5 lg:mt-20 items-center ">
               <h3 className="text-3xl font-light ">Wspierane centra</h3>
-              <p className="px-4 lg:px-20 text-[0.6rem] font-light mt-3 text-center text-footerColor">
+              <p className="px-4 lg:px-20 text-xs leading-5 font-light mt-3 text-center text-footerColor">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Praesent pharetra suscipit rhoncus. Quisque sed quam mauris.
                 Aliquam auctor nibh vitae mauris molestie rhoncus a eu libero.
@@ -50,7 +50,7 @@ const Certyfikaty = () => {
                   Aliquam auctor nibh vitae mauris molestie rhoncus a eu libero.
                   Nullam interdum augue in ipsum rhoncus, sit amet fringilla
                   felis vehicula. Donec vel viverra metus. Fusce tristique sed
-                  magna{" "}
+                  magna
                 </p>
               </div>
               <div className="grid grid-cols-2  lg:grid-cols-3 gap-6 mt-10">
