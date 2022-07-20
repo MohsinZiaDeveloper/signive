@@ -83,13 +83,14 @@ const Kontakt = () => {
                 />
                 <div className=" border-t-[0.02rem] mt-1 w-[20rem]"></div>
 
-                <input
-                  className="mt-3 font-light text-xs placeholder:text-white text-white w-full h-full bg-transparent outline-none border-none text-center"
-                  placeholder="  Treść wiadomości"
-                />
+                <div className=" border-b-[0.02rem] mt-1 w-[20rem]">
+                  <input
+                    className="mt-3 font-light pb-10 text-xs placeholder:text-white text-white w-full h-full bg-transparent outline-none border-none text-center"
+                    placeholder="  Treść wiadomości"
+                  />
+                </div>
               </div>
               <div className="mt-10 flex w-full lg:w-1/2 flex-col items-center text-white ">
-                <div className=" border-t-[0.02rem] mt-1 w-[20rem]"></div>
                 <div className="flex gap-3 mt-3 px-5 items-center">
                   <input type="checkbox" />
                   <p className="font-light text-[0.6rem]">

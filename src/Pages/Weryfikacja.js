@@ -162,15 +162,15 @@ const Weryfikacja = () => {
                       </p>
                     </div>
                     <button
-                      className="text-sm relative mt-5 font-medium px-10 py-3 rounded-[0.3rem] text-footerColor bg-white border-2 border-footerColor"
+                      className="text-sm relative mt-5 font-medium cursor-pointer px-10 py-3 rounded-[0.3rem] text-footerColor bg-white border-2 border-footerColor"
                       for="file_input1"
                     >
                       Strona główna
-                      <input
+                      {/* <input
                         className="opacity-0 left-0 top-0 absolute h-full  w-full "
                         id="file_input1"
                         type="file"
-                      ></input>
+                      ></input> */}
                     </button>
                   </div>
                 </div>
