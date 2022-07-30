@@ -54,7 +54,7 @@ const navLinks = [
 ];
 
 const Header = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [scroll, setScroll] = useState();
   const [screenDimension, setScreenDimension] = useState({
     width: window.innerWidth,
@@ -108,24 +108,24 @@ const Header = () => {
           >
             {open ? (
               <img
-                src={menuopen}
+                src={closeMenu}
                 className="h-4 w-4 mt-[-0.5rem] mr-4"
                 alt=""
               />
             ) : (
               <img
-                src={closeMenu}
+                src={menuopen}
                 className="h-4 w-4 mt-[-0.5rem] mr-4"
                 alt=""
               />
             )}
           </div>
-
+          {console.log("open ", open)}
           <div
-            className={`md:flex md:items-center h-[20rem]  rounded-sm bg-white lg:bg-transparent shadow-2xl lg:shadow-none  z-10 lg:rounded-none lg:h-auto     md:pb-0 pb-12 absolute md:static gap-10 md:z-auto  w-full  md:w-auto md:pl-0 pl-9 transition-all duration-700 ease-in ${
+            className={`md:flex md:items-center h-[20rem]  rounded-sm bg-white lg:bg-transparent shadow-2xl lg:shadow-none  z-10 lg:rounded-none lg:h-auto  md:pb-0 pb-12 absolute md:static gap-10 md:z-auto  w-full  md:w-auto md:pl-0 pl-9 transition-all duration-700 ease-in  ${
               open
-                ? "right-0 top-[-23rem] lg:top-0 "
-                : "right-0 top-[3.5rem] lg:top-0"
+                ? "right-0 top-[4rem] lg:top-0"
+                : "right-0 top-[-23rem] lg:top-0"
             }`}
           >
             <ul className="md:flex md:items-center lg:gap-5 text-md lg:text-xs font-light space-y-6 lg:space-y-0 ">
