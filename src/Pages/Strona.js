@@ -64,7 +64,7 @@ const Strona = () => {
                 adipiscing elit
               </p>
             </div>
-            <div className="h-[24rem] lg:h-[20rem]  mt-5  ml-[-1rem] bg-right  bg-contain bg-no-repeat rounded-md border-2 border-lightfooterColor  bg-[url('assets/Strona/centra.png')]">
+            <div className="h-[28rem]  lg:h-[20rem]   mt-5 ml-0   lg:ml-[-1rem] bg-right  bg-contain bg-no-repeat rounded-md border-2 border-lightfooterColor  bg-[url('assets/Strona/centra.png')]">
               <div className="bg-footerColor rounded-md h-full w-full bg-opacity-90 flex flex-col items-center  ">
                 <div className="h-24 w-24 border-2 mt-10 border-white p-1  rounded-full">
                   <div
