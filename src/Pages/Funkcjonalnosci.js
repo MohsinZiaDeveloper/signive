@@ -176,7 +176,7 @@ const Funkcjonalnosci = () => {
                     elit, sed do eiusmod Lorem ipsum dolor sit amet
                   </p>
                 </div>
-                <div className="w-[full] flex shadow-xl py-5 px-5 flex-col items-center ">
+                <div className="w-[full] flex shadow-xl py-5 px-5 flex-col items-center bg-white ">
                   <img src={img4} className="h-16 w-16" alt="" />
                   <h3 className="text-xs mt-3 px-5 text-logoColor font-bold text-center ">
                     Lorem ipsum dolor

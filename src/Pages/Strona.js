@@ -207,7 +207,7 @@ const Strona = () => {
                 sed do eiusmod Lorem ipsum dolor sit amet
               </p>
             </div>
-            <div className="w-[full] flex shadow-xl py-5 px-5 flex-col items-center ">
+            <div className="w-[full] flex shadow-xl py-5 px-5 flex-col items-center z-50 bg-white ">
               <img src={img4} className="h-16 w-16" alt="" />
               <h3 className="text-sm mt-3 px-5 text-logoColor font-bold text-center ">
                 Lorem ipsum dolor
