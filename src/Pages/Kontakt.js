@@ -9,7 +9,7 @@ import mapImage from "../assets/Kontakt/mapimage .png";
 
 const Kontakt = () => {
   return (
-    <div className="flex flex-col relative h-auto  bg-cover bg-no-repeat  bg-[url('assets/polityka/politykaBgimage.png')] ">
+    <div className="flex  flex-col relative h-auto  bg-cover bg-no-repeat  bg-[url('assets/polityka/politykaBgimage.png')] ">
       <img
         src={plus}
         alt=""
@@ -17,7 +17,7 @@ const Kontakt = () => {
       />
 
       <Header />
-      <div className="w-full  flex flex-col ">
+      <div className="w-full pt-10  flex flex-col ">
         <div className="w-full flex flex-col lg:flex-row mt-10 lg:mt-32 gap-2 px-4 lg:px-48">
           <div className="w-full lg:w-1/2 flex justify-start border p-12 shadow-lg rounded-lg  ">
             <div className="flex flex-col gap-2">

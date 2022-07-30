@@ -34,18 +34,18 @@ const Weryfikacja = () => {
   return (
     <div className="flex justify-center">
       <div className="container">
-        <div className="flex flex-col relative h-auto  bg-cover bg-no-repeat  bg-[url('assets/Weryfikacja/WeryfikacjaBackground.png')] ">
+        <div className="flex-col  flex  relative h-auto  bg-cover bg-no-repeat  bg-[url('assets/Weryfikacja/WeryfikacjaBackground.png')] ">
           <Header />
 
-          <div className="flex flex-col px-4 mt-0 py-20 lg:py-[15rem] lg:px-32 ">
+          <div className="flex flex-col items-center px-4 mt-0 py-20 lg:py-[15rem] lg:px-32 ">
             <div className="flex flex-col lg:flex-row">
               <div className="flex  w-full lg:w-1/2  ">
-                <div className="flex flex-col">
-                  <p className="text-sm lg:text-3xl font-bold pr-20 ">
+                <div className="flex flex-col items-center">
+                  <p className="text-sm lg:text-3xl font-bold px-10 text-center lg:text-left w-fit lg:pr-20 ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor
                   </p>
-                  <p className="text-[0.6rem] lg:text-xs font-light mt-3">
+                  <p className="text-[0.6rem] text-center lg:text-left lg:text-xs font-light mt-3">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed{" "}
                     <br />
                     do eiusmod tempor
@@ -68,7 +68,7 @@ const Weryfikacja = () => {
 
             {/* first section ends  */}
             <div className="w-full flex px-4 lg:mt-[13rem] lg:px-[10rem]">
-              <div className="w-full ">
+              <div className="w-full mt-10 lg:mt-0 ">
                 <div className=" flex  flex-col items-center">
                   <h3 className="text-3xl font-bold">Werfikacja</h3>
                   <p className="text-center text-footerColor leading-5 text-xs mt-3 px-4 lg:px-28">
@@ -78,7 +78,7 @@ const Weryfikacja = () => {
                   </p>
                 </div>
                 <div className="h-[22rem] lg:h-[20rem]  mt-5 bg-right  bg-contain bg-no-repeat rounded-md border-2 border-lightfooterColor  bg-[url('assets/Strona/centra.png')]">
-                  <div className="bg-footerColor rounded-md h-full w-full bg-opacity-90 flex flex-col items-center  ">
+                  <div className="bg-footerColor rounded-md h-[28rem] lg:h-full w-full bg-opacity-90 flex flex-col items-center  ">
                     <div className="h-24 w-24 border-2 mt-10 border-white p-1  rounded-full">
                       <div
                         className="h-full relative w-full z-20 cursor-pointer flex justify-center items-center rounded-full bg-lightfooterColor"
@@ -243,7 +243,7 @@ const Weryfikacja = () => {
                   pretium.
                 </p>
               </div>
-              <div className="flex flex-col my-10 px-4 lg:px-20">
+              <div className="flex flex-col my-10 px-4 lg:px-20 bg-white lg:bg-transparent">
                 {/* drop downs  */}
                 <div className="flex flex-col ">
                   {dropDowndata.map((data, index) => {
@@ -253,18 +253,24 @@ const Weryfikacja = () => {
                         onClick={() => setClick(index)}
                       >
                         <div className="flex p-2 justify-between items-center shadow-2xl rounded-lg  ">
-                          <h3 className="text-xs lg:text-sm font-light pl-5">
-                            {data.title}
-                          </h3>
-                          <div className="cursor-pointer">
+                          <div className="w-[90%]">
+                            <h3 className="text-xs lg:text-sm font-light pl-5">
+                              {data.title}
+                            </h3>
+                          </div>
+                          <div className="w-[10%] flex justify-end cursor-pointer">
                             {click === index ? (
                               <img
                                 src={arrowup}
                                 alt=""
-                                className="h-2 w-5 lg:w-3"
+                                className="w-[0.5rem] h-[0.3rem] lg:h-2  lg:w-3"
                               />
                             ) : (
-                              <img src={arrowdown} alt="" className="h-2 w-3" />
+                              <img
+                                src={arrowdown}
+                                alt=""
+                                className="w-[0.5rem] h-[0.3rem] lg:h-2 lg:w-3"
+                              />
                             )}
                           </div>
                         </div>

@@ -27,8 +27,8 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
 // import menu from "../assets/Weryfikacja/menu.png";
-import closeMenu from "../assets/menuClose.png"
-import menuopen from "../assets/menuopen.png"
+import closeMenu from "../assets/menuClose.png";
+import menuopen from "../assets/menuopen.png";
 
 const navLinks = [
   {
@@ -54,8 +54,8 @@ const navLinks = [
 ];
 
 const Header = () => {
-  const [open, setOpen] = useState(false);
-const [scroll,setScroll]= useState();
+  const [open, setOpen] = useState(true);
+  const [scroll, setScroll] = useState();
   const [screenDimension, setScreenDimension] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
@@ -76,21 +76,21 @@ const [scroll,setScroll]= useState();
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
- 
-
-const changeBackground =()=>{
-  if(window.scrollY >= 80){
-    setScroll(true);
-  }
-  else{
-    setScroll(false);
-  }
-
-}
-  window.addEventListener('scroll',changeBackground)
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
   return (
-    <div className={`h-[5rem] w-full  fixed z-[90]  ${scroll === true ? "bg-white ":""}`} >
-      <div className=" w-full h-[4.5rem] px-2 lg:px-20  bg-transparent z-[50] ">
+    <div
+      className={`h-[5rem] w-full  fixed z-[90]  ${
+        scroll === true ? "bg-white " : ""
+      }`}
+    >
+      <div className=" w-full h-[4.5rem]  px-2 lg:px-20  bg-transparent z-[50] ">
         <div className="md:flex items-center justify-between relative  md:px-10 h-full px-7">
           <div className="font-bold text-2xl cursor-pointer  flex  items-center ">
             <img
@@ -106,11 +106,19 @@ const changeBackground =()=>{
             onClick={() => setOpen(!open)}
             className="text-3xl absolute right-8 top-6 cursor-pointer lg:hidden"
           >
-           {
-            open ? (<img src={menuopen} className="h-4 w-4 mt-[-0.5rem] mr-4" alt="" />):(
-              <img src={closeMenu} className="h-4 w-4 mt-[-0.5rem] mr-4" alt="" />
-            )
-           }
+            {open ? (
+              <img
+                src={menuopen}
+                className="h-4 w-4 mt-[-0.5rem] mr-4"
+                alt=""
+              />
+            ) : (
+              <img
+                src={closeMenu}
+                className="h-4 w-4 mt-[-0.5rem] mr-4"
+                alt=""
+              />
+            )}
           </div>
 
           <div

@@ -17,7 +17,7 @@ const AfterSendForm = () => {
         />
         <Header />
 
-        <div className="flex w-full p-0 lg:pt-32 lg:px-36">
+        <div className="flex w-full p-0 lg:pt-32 pt-10 lg:px-36">
           <div className="card shadow-lg rounded-2xl relative  items-center py-10   bg-white flex flex-col px-4 lg:px-72">
             <img
               src={cardImage}

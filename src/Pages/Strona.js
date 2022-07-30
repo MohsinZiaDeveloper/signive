@@ -58,7 +58,7 @@ const Strona = () => {
           <div className="w-full ">
             <div className=" flex  flex-col items-center">
               <h3 className="text-3xl font-bold">Werfikacja</h3>
-              <p className="text-center text-footerColor leading-5 text-xs mt-3 px-28">
+              <p className="text-center text-footerColor leading-5 text-xs mt-3 px-10 lg:px-28">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit
@@ -166,15 +166,17 @@ const Strona = () => {
         {/* Third Section */}
         <div className="flex px-2 lg:px-[10rem] mt-24 flex-col w-full ">
           <div className="flex flex-col w-full items-center">
-            <h3 className="text-3xl font-bold ">Podstawowe Funkcionalosci</h3>
-            <p className="text-sm font-light text-footerColor leading-5 mt-5 text-center px-20">
+            <h3 className="text-3xl font-bold pl-20 lg:pl-0 w-fit ">
+              Podstawowe Funkcionalosci
+            </h3>
+            <p className="text-sm font-light text-footerColor leading-5 mt-5 text-center px-10 lg:px-20">
               do eiusmod tempor Lorem ipsum dolor sit amet, consectetur
               adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing
               elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur
               adipiscing
             </p>
           </div>
-          <div className="w-full mt-10 grid grid-cols-1 lg:grid-cols-4 gap-16 lg:gap-4 px-20">
+          <div className="w-full mt-10 grid grid-cols-1 lg:grid-cols-4 gap-16 lg:gap-4 px-4 lg:px-20">
             <div className="w-[full] flex shadow-xl py-5 px-5 flex-col items-center ">
               <img src={img1} className="h-16 w-16" alt="" />
               <h3 className="text-sm mt-3 px-5 text-logoColor font-bold text-center ">
